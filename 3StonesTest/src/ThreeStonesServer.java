@@ -172,7 +172,8 @@ public class ThreeStonesServer implements Runnable  {
 //                    //System.out.println("received: " + recvInts[0] + " " + recvInts[1] + " " + recvInts[2]);
 //                    //System.out.println("sending: " + move[0] + " " + move[1]);
 //                }
-                servSock.close();
+                clntSock.close();
+//                servSock.close();
             } catch(SocketException e) {
                 System.out.println("Socket error: " + e.getMessage());
             } catch(IOException io){}
